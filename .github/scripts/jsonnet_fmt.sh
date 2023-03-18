@@ -1,6 +1,6 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 
-shopt -s globstar nullglob
+setopt CSH_NULL_GLOB
 set -eo pipefail
 
 error=0
