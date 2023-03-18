@@ -268,6 +268,10 @@ local k = import 'lib/karabiner.libsonnet';
            k.input('9', ['command']),
            k.runDockedApp('7'),
            k.condition('unless', bundle.standard, file_paths.standard)),
+    k.rule('Click (Ctrl)',
+           k.input('button1', ['control']),
+           k.outputKey('button1', ['command']),
+           k.condition('unless', bundle.standard, file_paths.standard)),
     // Punctuation Keys
     k.rule('/ (Ctrl) [+Terminal Emulators]',
            k.input('slash', ['control']),
