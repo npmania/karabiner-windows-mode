@@ -3118,7 +3118,7 @@
                   }
                ],
                "from": {
-                  "key_code": "button1",
+                  "pointing_button": "button1",
                   "modifiers": {
                      "mandatory": [
                         "control"
@@ -3130,7 +3130,7 @@
                },
                "to": [
                   {
-                     "key_code": "button1",
+                     "pointing_button": "button1",
                      "modifiers": [
                         "command"
                      ]
