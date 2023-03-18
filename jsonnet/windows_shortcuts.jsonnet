@@ -237,10 +237,6 @@ local k = import 'lib/karabiner.libsonnet';
            k.input('slash', ['control']),
            k.outputKey('slash', ['command']),
            k.condition('unless', bundle.hypervisors + bundle.ides + bundle.remoteDesktops, file_paths.remoteDesktops)),
-    k.rule('Space (Ctrl)',
-           k.input('spacebar', ['control']),
-           k.outputKey('spacebar', ['command']),
-           k.condition('unless', bundle.standard, file_paths.standard)),
     // Function Keys
     k.rule('F1',
            k.input('f1'),
